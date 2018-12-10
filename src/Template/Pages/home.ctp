@@ -17,6 +17,9 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
@@ -32,7 +35,7 @@
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text-uppercase">JERSEY</h1>
           <h2 class="text-white-50 mx-auto mt-2 mb-5">Murah dan Ori.</h2>
-          <a class="btn btn-primary js-scroll-trigger" href="/jerseyProject/users/add" >sign up</a>
+          <a class="btn btn-primary js-scroll-trigger" href="/jerseyProject/items" >Start Ordering</a>
         </div>
       </div>
     </header>
@@ -43,7 +46,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-white mb-4">Built with Quality Material</h2>
-            <a class="btn btn-primary js-scroll-trigger" href="/jerseyProject/items" >Start Ordering</a>
+        
           </div>
         </div>
         <img class="img-fluid" alt="" src="img/ipad.png" >
@@ -158,9 +161,30 @@
           <a href="#" class="mx-2">
             <i class="fab fa-github"></i>
           </a>
-        </div>
 
+        </div>
+        <div class="container">
+	        <div class="row-fluid">
+                 <div class="span8">
+        	        <iframe width="50%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe>
+    	        </div>
+    	
+      	<div class="span4">
+    		    <h2>SYZCO</h2>
+    		    <address>
+    			<strong>QUALITY JERSEY</strong><br>
+    			15 Springfield Way<br>
+    			Hythe<br>
+    			Kent<br>
+    			United Kingdon<br>
+    			CT21 5SH<br>
+    			<abbr title="Phone">P:</abbr> 01234 567 890
+    		    </address>
+    	</div>
+        </div>
+        </div>
       </div>
+
     </section>
 
     <!-- Footer -->

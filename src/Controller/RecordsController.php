@@ -46,8 +46,9 @@ class RecordsController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add()
+    public function add($id = null)
     {
+        $this->set('itemid',$_SESSION['item_id']);
         $record = $this->Records->newEntity();
         if ($this->request->is('post')) {
             $record = $this->Records->patchEntity($record, $this->request->getData());
@@ -59,6 +60,7 @@ class RecordsController extends AppController
             $this->Flash->error(__('The record could not be saved. Please, try again.'));
         }
         $this->set(compact('record'));
+        $this->set('items_id',$id);
     }
 
     /**

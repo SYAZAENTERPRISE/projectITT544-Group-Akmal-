@@ -23,6 +23,7 @@ class ItemsController extends AppController
         $items = $this->paginate($this->Items);
 
         $this->set(compact('items'));
+        $this->set('_serialize', ['items']);
     }
 
     /**
@@ -39,6 +40,7 @@ class ItemsController extends AppController
         ]);
 
         $this->set('item', $item);
+        $this->set('_serialize', ['items']);
     }
 
     /**
@@ -107,5 +109,16 @@ class ItemsController extends AppController
 
     public function isAuthorized($user){
         return true;
+    }
+
+    public function temp()
+    {
+        $id = $this->request->getData()['id'];
+
+        $_SESSION['item_id'] = $id;
+
+        //echo $_SESSION['item_id'];
+
+        return $this->redirect(['controller'=>'Records','action'=>'add']);
     }
 }
